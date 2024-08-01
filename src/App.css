@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: sans-serif;
+}
+.active span {
+  color: #dde2ff;
+}
+.active {
+  border-color: #dde2ff;
+}
+.list-item:hover {
+  border-color: #3751ff;
+  box-shadow: 0 0 5px 1px #3752ff88;
+}
+.list-item:hover p {
+  color: #3751ff;
+}
