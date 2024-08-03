@@ -1,10 +1,12 @@
 import RingLogo from "../assets/images/ring-logo.svg";
 import SearchLogo from "../assets/images/search-logo.svg";
 import Avatar from "../assets/images/avatar.svg";
+import { NavLink, Outlet} from "react-router-dom";
 function Ideas() {
   return (
-    <div className="bg-[#F7F8FC] h-[100vh] p-[30px] w-[80%] ml-[303px]">
-    <div className="flex justify-between mb-[54px]">
+    <>
+    <div className="bg-[#F7F8FC] p-[30px] w-[80%] ml-[303px]">
+    <div className="flex justify-between">
       <h2 className="text-[24px] leading-[30px] font-bold text-[#252733]">
         Ideas
       </h2>
@@ -31,6 +33,18 @@ function Ideas() {
       </div>
     </div>
     </div>
+    <div className="ideas-child flex justify-center gap-[50px] ml-[303px]">
+      <NavLink to="aboutIdeas" className={'duration-300 font-bold text-[40px] text-center'}>
+      About Ideas
+      </NavLink>
+      <NavLink to="newIdeas" className={'duration-300 font-bold text-[40px] text-center'}>
+      New Ideas
+      </NavLink>
+    </div>
+    <div className="ml-[303px] flex justify-center">
+      <Outlet/>
+    </div>
+    </>
   )
 }
 

@@ -5,10 +5,14 @@
 body {
   font-family: sans-serif;
 }
-.active span {
+.navbar-list .active {
+  color: #dde2ff;
+  background-color: rgba(159, 162, 180, 8%);
+}
+.navbar-list .active span {
   color: #dde2ff;
 }
-.active {
+.navbar-list .active {
   border-color: #dde2ff;
 }
 .list-item:hover {
@@ -16,5 +20,8 @@ body {
   box-shadow: 0 0 5px 1px #3752ff88;
 }
 .list-item:hover p {
+  color: #3751ff;
+}
+.ideas-child .active{
   color: #3751ff;
 }

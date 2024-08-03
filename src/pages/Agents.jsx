@@ -1,12 +1,14 @@
 import RingLogo from "../assets/images/ring-logo.svg";
 import SearchLogo from "../assets/images/search-logo.svg";
 import Avatar from "../assets/images/avatar.svg";
+import { useParams } from "react-router-dom";
 function Agents() {
+  const {agentId} = useParams()
   return (
     <div className="bg-[#F7F8FC] h-[100vh] p-[30px] w-[80%] ml-[303px]">
     <div className="flex justify-between mb-[54px]">
       <h2 className="text-[24px] leading-[30px] font-bold text-[#252733]">
-        Agents
+        Agents: <span className="text-red-600 uppercase">{agentId}</span>
       </h2>
       <div className="flex items-center">
         <img
